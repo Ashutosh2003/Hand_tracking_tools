@@ -1,3 +1,5 @@
+# This program counts the no of fingers raised up in your right hand.
+
 import cv2
 import HandTrackingModule as htm
 
