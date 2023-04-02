@@ -1,3 +1,8 @@
+# This program lets you control volume of system sounds (windows) by using hand gesture.
+# To adjust volume clench your Right hand's middle,ring and little finger into a fist (only these 3 fingers should be curled inwards like a fist)
+# Then control the volume by varying the distance between the tips of your thumb and index finger (right hand).
+# Unclench your remaining 3 fingers to get out from adjust mode.
+
 import cv2
 import numpy as np
 import HandTrackingModule as htm
@@ -10,7 +15,7 @@ devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 detector = htm.handDetector(max_hands=2,trackCon=0.8,detectionCon=0.8)
 
-#VOL Things
+#VOLUME CONBTROL Things
 interface = devices.Activate(
             IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
