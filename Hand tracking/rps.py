@@ -60,7 +60,7 @@ while True:
                         else:
                             print("CPU wins")
                             CPUscr += 1
-                print(f'CPU Score: {CPUscr}\nPlayer Score: {Plscr}\n________________')
+                print(f'CPU Score: {CPUscr}\nPlayer Score: {Plscr}\nPress any key to continue\n________________')
                 break
     #time.sleep(2)
     if platform.system() == 'Linux':
